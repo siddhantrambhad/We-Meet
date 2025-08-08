@@ -18,6 +18,10 @@ const MeetingPage = () => {
     const { isLoaded, user } = useUser();
     const [isSetupComplete, setIsSetupComplete] = useState(false);
 
+    // ✅ Always call hooks unconditionally
+    const { call, isCallLoading } = useGetCallById(typeof id === 'string' ? id : '');
+
+    // ✅ Then check if the ID is invalid
     if (typeof id !== 'string') {
         return (
             <p className="text-center text-3xl font-bold text-white">
@@ -26,9 +30,9 @@ const MeetingPage = () => {
         );
     }
 
-    const { call, isCallLoading } = useGetCallById(id);
-
-    if (!isLoaded || isCallLoading) return <Loader />;
+    if (!isLoaded || isCallLoading) {
+        return <Loader />;
+    }
 
     if (!call) {
         return (
