@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# We Meet
 
-## Getting Started
+A real-time virtual meeting app built with **Next.js**, **Clerk**, **Stream**, and **Socket.io**.
 
-First, run the development server:
+ **Live App**: [we-meet-iota.vercel.app](https://we-meet-iota.vercel.app)
+
+---
+
+##  About
+
+**We Meet** is a clean and fast meeting platform where users can create or join rooms with secure authentication and real-time video chat — perfect for remote collaboration or casual meetups.
+
+---
+
+##  Features
+
+-  Secure login via [Clerk](https://jsm.dev/zoom-clerk)
+-  Real-time video & audio via [Stream](https://jsm.dev/zoom-stream)
+-  Smart utilities with [WebStorm](https://jsm.dev/zoom-webstorm)
+-  Room-based user sessions via Socket.io
+-  Fully responsive UI
+-  Fast, minimal, modern design
+
+---
+
+
+
+###  Home Page
+![Home](./Home.png)
+
+###  Meeting Room
+![Room](./Meeting.png)
+
+###  Meeting Scheduler
+![Video](./ScheduleMeet.png)
+
+###  Authentication Page
+![Auth](./Auth.png)
+
+
+
+##  Tech Stack
+
+- **Frontend:** [Next.js](https://nextjs.org/)
+- **Authentication:** [Clerk](https://jsm.dev/zoom-clerk)
+- **Video API:** [Stream](https://jsm.dev/zoom-stream)
+- **Real-Time:** [Socket.io](https://socket.io/)
+- **AI Tools:** [WebStorm](https://jsm.dev/zoom-webstorm)
+- **Styling:** Tailwind CSS
+- **Hosting:** [Vercel](https://vercel.com/)
+
+---
+
+### Installation
 
 ```bash
+# Clone the repo
+git clone https://github.com/siddhantrambhad/We-Meet.git
+cd We-Meet
+
+# Install dependencies
+npm install
+
+# Start the app
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
